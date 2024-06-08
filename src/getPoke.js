@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const pokemonNames = [
   "pikachu",
   "charmander",
@@ -30,6 +32,7 @@ export default async function getPokemons(name) {
     return {
       name: pokemon.name,
       img: pokemon.sprites.front_default,
+      id: uuidv4(),
     };
   } catch (e) {
     console.log("failed to fetch: " + e);
