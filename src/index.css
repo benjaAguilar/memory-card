@@ -1,0 +1,54 @@
+@font-face {
+  font-family: pixel;
+  src: url('./assets/PixelifySans-VariableFont_wght.ttf');
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: pixel;
+  font-weight: 100;
+  background-color: #262626;
+  border-color: #84cc16;
+  color: #84cc16;
+}
+
+#root{
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scores{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h2{
+  color: white;
+  font-size: 2rem;
+}
+
+.card-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #16a34a70;
+  padding: 1rem;
+  border: 3px solid;
+  cursor: pointer;
+}
